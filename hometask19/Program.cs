@@ -22,3 +22,5 @@ if (number!.Length == 5)
   SomeNumber(number);
 }
 else Console.WriteLine($"Введи правильное число");
+
+
