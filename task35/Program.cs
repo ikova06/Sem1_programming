@@ -22,13 +22,16 @@ int length = Convert.ToInt32(Console.ReadLine());
 int[] array = FillArrayWithRandomNumber(length);
 System.Console.WriteLine(string.Join(", ", array));
 
-int count = 0;
+int newLength = array.Length/2 + array.Length%2;
 
-for (int i = 0; i < array.Length; i++)
+int[] newArray = new int [newLength];
+
+for (int i = 0; i < array.Length/2; i++)
 {
-if (array [i] >=10 && array [i] <100)
+newArray [i] = array [i] *= array[array.Length- i -1];
+}
+if (array.Length % 2 == 1)
 {
-    count++;
+newArray[newArray.Length - 1] = array[array.Length / 2];
 }
-}
-System.Console.WriteLine(count);
+System.Console.WriteLine(string.Join(", ", newArray));
