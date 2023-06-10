@@ -5,6 +5,7 @@
 // 34(1,0,0) 41(1,1,0)
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
+
 System.Console.Write("Введите X: ");
 int x = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Введите Y: ");
@@ -12,13 +13,6 @@ int y = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Введите Z: ");
 int z = Convert.ToInt32(Console.ReadLine());
 int[,,] array3d = new int[x,y,z];
-
-// int InputNumbers(string input)
-// {
-//   Console.Write(input);
-//   int output = Convert.ToInt32(Console.ReadLine());
-//   return output;
-// }
 
 void WriteArray (int[,,] array3d)
 {
